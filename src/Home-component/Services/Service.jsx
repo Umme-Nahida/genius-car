@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Container from "../../Container/Container";
+import ServiceCard from "../../Component/ServiceCard";
 
 const Service = () => {
   const [service, setService] = useState([]);
@@ -31,22 +32,11 @@ const Service = () => {
         {/* service cards */}
         <div className="grid grid-cols-3 gap-10 items-center">
           {service.map((item) => (
-             <div key={item._id} className="card bg-base-100 shadow-xl">
-             <figure className="px-10 pt-10">
-               <img
-                 src={item.img}
-                 alt="Shoes"
-                 className="rounded-xl"
-               />
-             </figure>
-             <div className="card-body items-center text-center">
-               <h2 className="card-title text-left text-3xl">{item.title} </h2>
-               <div className=" flex justify-between items-center w-full">
-                 <span className="text-xl">Price: ${item.price} </span>
-                 <button className="btn btn-primary">Details</button>
-               </div>
-             </div>
-           </div>
+            <ServiceCard
+             key={item._id}
+             item={item}
+            
+            ></ServiceCard>
            
           ))}
         </div>
