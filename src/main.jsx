@@ -4,9 +4,14 @@ import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import router from "./Router/Router.jsx";
 import "./index.css";
+import AuthProviderr from "./Firebase/Provider/AuthProviderr.jsx";
+import { Toaster } from "react-hot-toast";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-      <RouterProvider router={router} />
+      <AuthProviderr>
+       <RouterProvider router={router} />
+      </AuthProviderr>
+      <Toaster></Toaster>
   </React.StrictMode>
 );
