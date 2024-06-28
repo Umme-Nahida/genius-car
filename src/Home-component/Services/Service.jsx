@@ -40,7 +40,7 @@ const Service = () => {
                />
              </figure>
              <div className="card-body items-center text-center">
-               <h2 className="card-title">{item.title} </h2>
+               <h2 className="card-title text-left text-3xl">{item.title} </h2>
                <div className=" flex justify-between items-center w-full">
                  <span className="text-xl">Price: ${item.price} </span>
                  <button className="btn btn-primary">Details</button>
