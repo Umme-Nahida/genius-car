@@ -20,7 +20,7 @@ const Login = () => {
         console.log(result);
         toast.success("successfully logged")
         e.target.reset();
-        
+        navigate("/")
       }).catch(err=>toast.error(err.code || err.message));
     }catch(err){
       toast.error("something wend rong");
