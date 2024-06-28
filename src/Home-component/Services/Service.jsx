@@ -41,7 +41,7 @@ const Service = () => {
              </figure>
              <div className="card-body items-center text-center">
                <h2 className="card-title">{item.title} </h2>
-               <div className=" flex justify-between items-center bg-slate-500 w-full">
+               <div className=" flex justify-between items-center w-full">
                  <span className="text-xl">Price: ${item.price} </span>
                  <button className="btn btn-primary">Details</button>
                </div>
