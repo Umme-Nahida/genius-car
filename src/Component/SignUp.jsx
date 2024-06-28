@@ -18,7 +18,7 @@ const SignUp = () => {
                 console.log(result.user)
                 toast.success("successfully user created");
                 e.target.reset();
-                navigate("/")
+                
             })
             .catch(error=>{
                 toast.error(error.code || error.message);
