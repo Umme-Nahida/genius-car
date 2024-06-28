@@ -17,7 +17,7 @@ const Service = () => {
     <Container>
       <div className="text-center">
         <div className="w-[400px] mx-auto ">
-          <p className="text-lime-50">Service</p>
+          <p className="text-lg">Service</p>
           <h1 className="text-4xl font-semibold text-black">
             Our Service Area
           </h1>
