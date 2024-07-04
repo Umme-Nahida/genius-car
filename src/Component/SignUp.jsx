@@ -24,7 +24,7 @@ const SignUp = () => {
                 toast.error(error.code || error.message);
             });
         }catch(err){
-            toast.error("something wend rong")
+            toast.error("something wend wrong")
         }
       }
     return (
